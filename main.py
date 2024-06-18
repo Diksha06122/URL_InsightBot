@@ -1,9 +1,4 @@
-# import os
-# import logging
 
-# # Configure the logging level based on an environment variable or default to "DEBUG" level
-
-# logging.basicConfig(level=os.environ.get("LOGLEVEL", "DEBUG"))
 import os
 os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
 
@@ -93,7 +88,7 @@ print(type(urls[0]))
 process_url_clicked = st.sidebar.button("Process URLs")
 file_path = "faiss_store.pkl"
 main_placeholder = st.empty()
-os.environ["GOOGLE_API_KEY"] = "AIzaSyCPOYxUyRCPnKnvL10wnA0H4lNnKD4LqFQ"
+os.environ["GOOGLE_API_KEY"] = "Your_API_key"
 
 llm = ChatGoogleGenerativeAI(model="gemini-pro")
 if process_url_clicked:
